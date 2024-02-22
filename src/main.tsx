@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { RouterProvider, createHashRouter} from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorPage from './routes/ErrorPage.tsx';
 import CharacterPage from './routes/CharacterPage.tsx';
 import { RootLayout } from './routes/Root.tsx';
@@ -10,7 +10,7 @@ import Characters from './routes/Characters.tsx';
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 import "./style.css"
-const router = createHashRouter([
+const router = createBrowserRouter ([
     { 
         path: "/",
         element: <RootLayout />,
@@ -24,7 +24,7 @@ const router = createHashRouter([
                   element: <Home/>,
                 },
                 {
-                  path: "characters",
+                  path: "/characters",
                   children: [
                     {
                         index: true,
