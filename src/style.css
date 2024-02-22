@@ -1,0 +1,226 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+tr {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: rgba(16 18 27 / 60%);
+    width: 200px;
+}
+td{
+    width: 400px;
+}
+th+td{
+    width: 200px;
+}
+ul,li{
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-color: #3e3e3e;
+    background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+body *{
+    color: #fff;
+}
+.card{
+    background-color: rgba(16 18 27 / 1%);
+    backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ padding: 25px;
+}
+.navbar{
+    background-color: rgba(16 18 27 / 0.00000001) !important;
+}
+tbody button{
+    color: yellow !important;
+}
+.content{
+    margin-top: 20%;
+    max-width: 600px;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup .5s linear forwards;
+}
+@media (min-width:1920px) {
+    .feature-img{
+        width: 630px;
+        position: absolute;
+        top: 0;
+        right: 10%;
+    }
+    .content h1{
+        font-size: 70px;
+        color: #fff;
+    }
+    .content p{
+        margin:  10px 0 30px;
+        color: #fff;
+        font-size: 24px;
+    }
+    .btn{
+        color: yellow;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+    .content .btn{
+        font-size: 32px;
+    }
+}
+@media (max-width:1919px) and (min-width:1520px) {
+    .feature-img{
+        width: 530px;
+        position: absolute;
+        top: 0;
+        right: 10%;
+    }
+    .content h1{
+        font-size: 60px;
+        color: #fff;
+    }
+    .content p{
+        margin:  10px 0 30px;
+        color: #fff;
+        font-size: 20px;
+    }
+    .btn{
+        color: yellow;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+    .content .btn{
+        font-size: 24px;
+    }
+}
+@media (max-width:1519px) and (min-width:1320px) {
+    .feature-img{
+        width: 430px;
+        position: absolute;
+        top: 0;
+        right: 10%;
+    }
+    .content h1{
+        font-size: 60px;
+        color: #fff;
+    }
+    .content p{
+        margin:  10px 0 30px;
+        color: #fff;
+        font-size: 16px;
+    }
+    .btn{
+        color: yellow;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+    .content .btn{
+        font-size: 20px;
+    }
+}
+@media (max-width:1319px) and (min-width:1100px) {
+    .feature-img{
+        width: 380px;
+        position: absolute;
+        top: 0;
+        right: 10%;
+    }
+    .content h1{
+        font-size: 60px;
+        color: #fff;
+    }
+    .content p{
+        margin:  10px 0 30px;
+        color: #fff;
+        font-size: 16px;
+    }
+    .btn{
+        color: yellow;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+    .content .btn{
+        font-size: 20px;
+    }
+}
+@media (max-width:1099px) and (min-width:992px) {
+    .feature-img{
+        width: 300px;
+        position: absolute;
+        top: 10%;
+        right: 10%;
+    }
+    .content h1{
+        font-size: 60px;
+        color: #fff;
+    }
+    .content p{
+        margin:  10px 0 30px;
+        color: #fff;
+        font-size: 16px;
+    }
+    .btn{
+        color: yellow;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+    .content .btn{
+        font-size: 20px;
+    }
+}
+@media (max-width:991px) {
+    .feature-img{
+        display: none;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        text-align: center;
+    }
+    .content h1{
+        font-size: 60px;
+        color: #fff;
+    }
+    .content p{
+        margin:  10px 0 30px;
+        color: #fff;
+        font-size: 16px;
+    }
+    .btn{
+        color: yellow;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+    .content .btn{
+        font-size: 20px;
+    }
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
