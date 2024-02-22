@@ -59,7 +59,7 @@ function Characters() {
           data.debut ?(<Card.Text>Appears In: {data.debut.appearsIn}</Card.Text>) : <Card.Text>Appears In: undefined</Card.Text>
         }
         <div className='text-center'>
-          <Button href={"characters/"+(data.id).toString()} variant="link" style={{color:"yellow"}}>More Info</Button>
+          <Button href={"ReactRouterNaruto/characters/"+(data.id).toString()} variant="link" style={{color:"yellow"}}>More Info</Button>
         </div>
       </Card.Body>
     </Card>

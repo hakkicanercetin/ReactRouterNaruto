@@ -4,7 +4,7 @@ export function MyNavbar(){
     return (
       <Navbar className="bg-body-tertiary">
         <Container className="d-block">
-          <a href="/" className="d-flex justify-content-center align-items-center text-black text-decoration-none">
+          <a href="/ReactRouterNaruto" className="d-flex justify-content-center align-items-center text-black text-decoration-none">
                 <img
                 alt=""
                 src="../../../public/naruto-bg.png"
