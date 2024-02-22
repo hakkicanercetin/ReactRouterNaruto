@@ -39,10 +39,6 @@ const router = createHashRouter([
             }
         ]
     },
-/*     {
-        path: ":id",
-        element: <CharacterPage/>
-    } */
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
       <React.StrictMode>

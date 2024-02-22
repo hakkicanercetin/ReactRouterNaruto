@@ -7,7 +7,7 @@ export function MyNavbar(){
           <a href="/ReactRouterNaruto" className="d-flex justify-content-center align-items-center text-black text-decoration-none">
                 <img
                 alt=""
-                src="../../../public/naruto-bg.png"
+                src="naruto-bg.png"
                 width="100"
                 height="100"
                 className="d-inline-block"
