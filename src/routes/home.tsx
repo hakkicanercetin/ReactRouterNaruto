@@ -8,7 +8,7 @@ export function Home()
                 a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.</p>
                 <a href="./characters" className="btn anim">Characters Page →</a>
             </div>
-            <img src="../../public/naruto.png" className="feature-img anim" />
+            <img src="./../../public/naruto.png" className="feature-img anim" />
         </>
     )
 }
