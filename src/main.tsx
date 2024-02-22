@@ -10,7 +10,7 @@ import Characters from './routes/Characters.tsx';
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 import "./style.css"
-const router = createHashRouter([
+const router = createBrowserRouter([
     { 
         path: "/",
         element: <RootLayout />,
