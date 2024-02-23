@@ -4,10 +4,10 @@ export function MyNavbar(){
     return (
       <Navbar className="bg-body-tertiary">
         <Container className="d-block">
-          <a href="/ReactRouterNaruto" className="d-flex justify-content-center align-items-center text-black text-decoration-none">
+          <a href="/" className="d-flex justify-content-center align-items-center text-black text-decoration-none">
                 <img
                 alt=""
-                src="naruto-bg.png"
+                src="/naruto-bg.png"
                 width="100"
                 height="100"
                 className="d-inline-block"
