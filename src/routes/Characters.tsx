@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { Button, Card } from 'react-bootstrap';
 import { Main } from '../types';
 import { ClipLoader } from 'react-spinners';
+import { Link } from 'react-router-dom';
 
 async function getNaruto(page:number=1) {
   const response = await fetch("https://dattebayo-api.onrender.com/characters?page="+page)
@@ -30,10 +31,19 @@ function Characters() {
       }
     })()
   },[page])
+  console.log(myData)
   function NextPage(){
+    if(page>=Math.ceil(myData.total/myData.pageSize))
+    {
+      return true
+    }
     setPage(oldPage => oldPage+1)
   }
   function PrevPage(){
+    if(page < 1)
+    {
+      return true
+    }
     setPage(oldPage => oldPage-1)
   }
   if(loading)
@@ -59,7 +69,7 @@ function Characters() {
           data.debut ?(<Card.Text>Appears In: {data.debut.appearsIn}</Card.Text>) : <Card.Text>Appears In: undefined</Card.Text>
         }
         <div className='text-center'>
-          <Button href={"characters/"+(data.id).toString()} variant="link" style={{color:"yellow"}}>More Info</Button>
+          <Link to={"./"+(data.id).toString()}  style={{color:"yellow"}}>More Info</Link>
         </div>
       </Card.Body>
     </Card>
